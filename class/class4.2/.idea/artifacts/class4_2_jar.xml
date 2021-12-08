@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact name="class4.2:jar">
+    <output-path>$PROJECT_DIR$/../../../作业/javaClass/jarBag</output-path>
+    <root id="root">
+      <element id="archive" name="class4.2.jar">
+        <element id="module-output" name="class4.2" />
+        <element id="module-source" name="class4.2" />
+      </element>
+    </root>
+  </artifact>
+</component>

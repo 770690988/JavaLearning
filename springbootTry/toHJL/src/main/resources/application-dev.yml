@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ais_task
+    username: root
+    password: 123456
+  session:
+    store-type: redis
+
+  #    type: com.mchange.v2.c3p0.ComboPooledDataSource
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    #超时一定要大于0
+    jedis:
+      pool:
+        max-wait: -1
+        min-idle: 0
+        max-active: 8
+        max-idle: 8
+    timeout: 3000
+    database: 0
+server:
+  port: 8081
+
